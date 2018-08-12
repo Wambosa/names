@@ -1,0 +1,17 @@
+{
+  "name": "names",
+  "version": "1.0.0",
+  "description": "an algorithm that i keep using over and over for readable backend tokens",
+  "homepage": "https://github.com/wambosa/names",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wambosa/names"
+  },
+  "dependencies": {
+    "js-yaml": "^3.12.0"
+  }
+}
