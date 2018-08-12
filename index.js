@@ -1,11 +1,12 @@
 const fs = require('fs')
+const path = require('path')
 const yaml = require('js-yaml')
 
-const prefix = yaml.safeLoad(fs.readFileSync('./words/prefix.yml'))
-const roomNoun = yaml.safeLoad(fs.readFileSync('./words/roomNoun.yml'))
-const adjective = yaml.safeLoad(fs.readFileSync('./words/adjective.yml'))
-const playerNoun = yaml.safeLoad(fs.readFileSync('./words/playerNoun.yml'))
-const illumination = yaml.safeLoad(fs.readFileSync('./words/illumination.yml'))
+const prefix = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'words', 'prefix.yml')))
+const roomNoun = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'words', 'roomNoun.yml')))
+const adjective = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'words', 'adjective.yml')))
+const playerNoun = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'words', 'playerNoun.yml')))
+const illumination = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'words', 'illumination.yml')))
 
 function randomInt(min, max) {
   return Math.floor(Math.random()*(max-min+1)+min)
